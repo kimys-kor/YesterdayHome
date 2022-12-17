@@ -4,14 +4,15 @@ import { ThemeContext } from "../Context/ThemeContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMeteor, faSearch } from "@fortawesome/free-solid-svg-icons";
 import styles from "./styles/Header.module.css";
+import home_icon from "../Icons/home-icon.png";
 
 function Header() {
   return (
     <div className={styles.header_content}>
       <div className={styles.mainlogo}>
-        <FontAwesomeIcon icon={faMeteor} />
-        어제의 집
+        <img className={styles.icon} src={home_icon} />
       </div>
+      <p className={styles.title}>어제의 집</p>
       <div>
         <input
           className={styles.searchinput}

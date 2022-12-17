@@ -38,3 +38,11 @@
 .mainlogo:hover {
   font-size: 1.6rem;
 }
+
+.title {
+  font-size: 1.9rem;
+}
+
+.icon {
+  width: 40px;
+}
