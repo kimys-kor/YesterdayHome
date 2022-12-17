@@ -1,9 +1,9 @@
 export const light = {
-  bgcolor: "#ffff6b",
+  bgcolor: "#F7F7F9",
   Color: "#000000",
 };
 
 export const dark = {
-  bgcolor: "#c6a700",
+  bgcolor: "#1b1b1b",
   Color: "#ffffff",
 };

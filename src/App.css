@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Esamanru";
+  font-weight: 200;
+  src: url("./fonts/esamanru/esamanru\ Light.ttf");
+}
+
+.App {
+  width: 100%;
+}

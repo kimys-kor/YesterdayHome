@@ -4,7 +4,7 @@ import reset from "styled-reset";
 export const GlobalStyle = createGlobalStyle`
     ${reset}
     body{
-        font-size: 30px;
+        font-family: "Esamanru";
         background-color:${({ theme }) => theme.bgcolor};
         Color:${({ theme }) => theme.Color};
 `;

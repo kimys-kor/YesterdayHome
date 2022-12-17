@@ -6,11 +6,6 @@ import { ThemeContext } from "./Context/ThemeContext";
 import { GlobalStyle } from "./GlobalStyle";
 import { light, dark } from "./theme";
 
-const Navbarbox = styled.nav`
-  position: sticky;
-  top: 0;
-`;
-
 function App() {
   const LocalTheme = window.localStorage.getItem("theme") || "light";
   const [theme, setTheme] = useState(LocalTheme);

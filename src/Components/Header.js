@@ -1,13 +1,27 @@
 import { useEffect, useState, useContext } from "react";
 import styled from "styled-components";
 import { ThemeContext } from "../Context/ThemeContext";
-
-const Menubox = styled.div``;
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMeteor, faSearch } from "@fortawesome/free-solid-svg-icons";
+import styles from "./styles/Header.module.css";
 
 function Header() {
-  const { theme } = useContext(ThemeContext);
-
-  return <Menubox className="header">헤더</Menubox>;
+  return (
+    <div className={styles.header_content}>
+      <div className={styles.mainlogo}>
+        <FontAwesomeIcon icon={faMeteor} />
+        어제의 집
+      </div>
+      <div>
+        <input
+          className={styles.searchinput}
+          type="text"
+          placeholder="검색어를 입력하세요"
+        ></input>
+        <FontAwesomeIcon icon={faSearch} className={styles.searchlogo} />
+      </div>
+    </div>
+  );
 }
 
 export default Header;
