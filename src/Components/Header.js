@@ -2,7 +2,7 @@ import { useEffect, useState, useContext } from "react";
 import styled from "styled-components";
 import { ThemeContext } from "../Context/ThemeContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMeteor, faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import styles from "./styles/Header.module.css";
 import home_icon from "../Icons/home-icon.png";
 

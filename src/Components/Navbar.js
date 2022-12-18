@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import NavEvent from "./Navcomponents/NavEvent";
+import { Link } from "react-router-dom";
 
 const Nav_content = styled.div`
   max-width: 1280px;
@@ -74,6 +75,11 @@ const Nav_content = styled.div`
   }
 `;
 
+const NavbarLink = styled(Link)`
+  color: #000000;
+  text-decoration: none;
+`;
+
 function Navbar() {
   return (
     <Nav_content>
@@ -85,16 +91,21 @@ function Navbar() {
       </div>
 
       <ul className="Nav_menu">
-        <li className="Nav_menu_item">
-          홈
-          <ul className="Drop_menu">
-            <li className="Drop_item">드롭메뉴1</li>
-            <li className="Drop_item">드롭메뉴2</li>
-            <li className="Drop_item">드롭메뉴3</li>
-          </ul>
-        </li>
+        <NavbarLink to={"/"}>
+          <li className="Nav_menu_item">
+            홈
+            <ul className="Drop_menu">
+              <li className="Drop_item">드롭메뉴1</li>
+              <li className="Drop_item">드롭메뉴2</li>
+              <li className="Drop_item">드롭메뉴3</li>
+            </ul>
+          </li>
+        </NavbarLink>
 
-        <li className="Nav_menu_item">팔로잉</li>
+        <NavbarLink to={"/freeboard"}>
+          <li className="Nav_menu_item">게시판</li>
+        </NavbarLink>
+
         <li className="Nav_menu_item">사진</li>
         <li className="Nav_menu_item">집들이</li>
         <li className="Nav_menu_item">노하우</li>
