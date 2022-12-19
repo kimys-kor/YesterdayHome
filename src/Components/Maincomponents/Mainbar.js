@@ -4,14 +4,6 @@ import styled from "styled-components";
 import Mainbanner from "./mainbar/Mainbanner.js";
 import Picturecard from "./mainbar/Picturecard.js";
 
-const Menubox = styled.div`
-  flex: 0 0 73.4%;
-  max-width: 73.4%;
-
-  display: flex;
-  flex-direction: column;
-`;
-
 const Picturearea = styled.div`
   margin-top: 40px;
   display: grid;
@@ -20,7 +12,7 @@ const Picturearea = styled.div`
 
 function Mainbar() {
   return (
-    <Menubox>
+    <>
       <Mainbanner></Mainbanner>
       <Picturearea>
         <Picturecard></Picturecard>
@@ -29,7 +21,7 @@ function Mainbar() {
         <Picturecard></Picturecard>
         <Picturecard></Picturecard>
       </Picturearea>
-    </Menubox>
+    </>
   );
 }
 

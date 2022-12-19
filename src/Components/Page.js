@@ -6,7 +6,7 @@ import Navbar from "./Navbar";
 import Sidebar from "./Maincomponents/Sidebar";
 import Mainbar from "./Maincomponents/Mainbar";
 
-import Freeboard from "./Board/Freeboard";
+import Freeboard from "./Maincomponents/Freeboard";
 
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
@@ -37,6 +37,13 @@ const Box = styled.div`
 
     display: flex;
   }
+  .Main1 {
+    flex: 0 0 73.4%;
+    max-width: 73.4%;
+
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 function Page() {
@@ -52,10 +59,12 @@ function Page() {
 
         <div className="Mainbox">
           <Sidebar></Sidebar>
-          <Routes>
-            <Route path="/" element={<Mainbar />} />
-            <Route path="/freeboard" element={<Freeboard />} />
-          </Routes>
+          <div className="Main1">
+            <Routes>
+              <Route path="/" element={<Mainbar />} />
+              <Route path="/freeboard" element={<Freeboard />} />
+            </Routes>
+          </div>
         </div>
         <Footer></Footer>
       </Box>
