@@ -23,6 +23,10 @@ const Nav_content = styled.div`
 
     color: #63a4ff;
     font-size: 12px;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   .Nav_event_item {
@@ -38,6 +42,15 @@ const Nav_content = styled.div`
 
   .Nav_menu {
     display: flex;
+    overflow-x: auto;
+    overflow-y: visible;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .Nav_menu::-webkit-scrollbar {
+    display: none;
   }
 
   .Nav_menu_item {
@@ -75,11 +88,6 @@ const Nav_content = styled.div`
   }
 `;
 
-const NavbarLink = styled(Link)`
-  color: #000000;
-  text-decoration: none;
-`;
-
 function Navbar() {
   return (
     <Nav_content>
@@ -91,7 +99,7 @@ function Navbar() {
       </div>
 
       <ul className="Nav_menu">
-        <NavbarLink to={"/"}>
+        <Link to={"/"}>
           <li className="Nav_menu_item">
             홈
             <ul className="Drop_menu">
@@ -100,11 +108,11 @@ function Navbar() {
               <li className="Drop_item">드롭메뉴3</li>
             </ul>
           </li>
-        </NavbarLink>
+        </Link>
 
-        <NavbarLink to={"/freeboard"}>
+        <Link to={"/freeboard"}>
           <li className="Nav_menu_item">게시판</li>
-        </NavbarLink>
+        </Link>
 
         <li className="Nav_menu_item">사진</li>
         <li className="Nav_menu_item">집들이</li>

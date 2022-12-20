@@ -35,12 +35,15 @@ const Box = styled.div`
     margin: 0 auto;
     padding: 12px 36px;
 
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(320px, 25%) 1fr;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      padding: 16px 8px;
+    }
   }
   .Main1 {
-    flex: 0 0 73.4%;
-    max-width: 73.4%;
-
     display: flex;
     flex-direction: column;
   }

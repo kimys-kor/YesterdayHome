@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 
 const Card = styled.div`
-  width: 250px;
+  width: 95%;
   text-align: center;
 
   margin: 20px auto;

@@ -4,7 +4,8 @@ import hotIcon from "../../../Icons/hotIcon.svg";
 import eventpic from "../../../images/event.png";
 
 const Card = styled.div`
-  width: 250px;
+  width: 95%;
+
   text-align: center;
 
   margin: 0 auto;

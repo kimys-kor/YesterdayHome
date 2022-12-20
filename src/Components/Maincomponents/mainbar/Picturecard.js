@@ -7,7 +7,7 @@ const Card = styled.div`
   display: block;
   text-align: center;
 
-  margin: 10px 20px;
+  margin: 10px 5px;
   border-radius: 5px;
   box-shadow: 4px 4px 4px 5px rgba(168, 165, 165, 0.2);
 
@@ -31,7 +31,6 @@ const Card = styled.div`
     margin: 0 auto;
   }
   .contentfont {
-    color: #000000;
     font-size: 14px;
     margin: 0 auto;
   }

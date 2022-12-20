@@ -5,11 +5,9 @@ import Mainpic from "../../../bannerpic/main1.png";
 
 const Card = styled.div`
   width: 100%;
-  height: 400px;
+  height: 300px;
   text-align: center;
   overflow: hidden;
-
-  margin: 0 auto;
 
   img {
     width: 100%;

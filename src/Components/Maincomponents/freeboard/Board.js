@@ -44,6 +44,10 @@ const Tddate = styled.div``;
 const Tdviews = styled.div``;
 const Tdrcm = styled.div``;
 
+const setPage = function () {
+  console.log("온체인지");
+};
+
 function Board() {
   return (
     <Table>
@@ -136,7 +140,7 @@ function Board() {
         <Tdviews>0</Tdviews>
         <Tdrcm>0</Tdrcm>
       </Tr>
-      <Paging page={1} count={15}></Paging>
+      <Paging page={1} count={15} setPage={setPage}></Paging>
     </Table>
   );
 }

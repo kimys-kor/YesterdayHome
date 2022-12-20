@@ -2,54 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { useForm } from "react-hook-form";
 
-const Card = styled.div`
-  width: 250px;
-  text-align: center;
-
-  margin: 0 auto;
-  box-shadow: 4px 4px 4px 1px rgba(168, 165, 165, 0.2);
-
-  .card_title {
-    width: 100%;
-    height: 40px;
-
-    background-color: #6ec5ff;
-    border-radius: 8px 8px 0 0;
-    padding: 10px 24px 0;
-
-    font-size: 19px;
-    color: #ffffff;
-  }
-
-  .card_content {
-    width: 100%;
-    max-height: 230px;
-
-    background-color: #f7f8fa;
-    border-radius: 0 0 8px 8px;
-    padding: 15px 10px;
-
-    display: flex;
-    flex-direction: column;
-    align-item: center;
-    text-align: center;
-  }
-
-  .card_content_item {
-    display: flex;
-    flex-direction: row;
-
-    white-space: nowrap;
-    line-height: 200%;
-  }
-
-  .hoticon {
-    width: 1.7rem;
-  }
-`;
-
 const Form = styled.form`
-  max-width: 500px;
+  width: 95%;
+
   margin: 20px auto;
   padding: 20px;
   border-radius: 5px;

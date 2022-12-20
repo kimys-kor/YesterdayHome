@@ -7,4 +7,10 @@ export const GlobalStyle = createGlobalStyle`
         font-family: "Esamanru";
         background-color:${({ theme }) => theme.bgcolor};
         Color:${({ theme }) => theme.Color};
+    }
+    a {
+        text-decoration: none;
+        color:${({ theme }) => theme.Color};
+    }
+    
 `;
