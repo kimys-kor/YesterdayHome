@@ -44,6 +44,7 @@ const Box = styled.div`
     }
   }
   .Main1 {
+    margin: 0 0 0 10px;
     display: flex;
     flex-direction: column;
   }

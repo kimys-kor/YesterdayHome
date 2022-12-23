@@ -43,14 +43,22 @@ const Nav_content = styled.div`
   .Nav_menu {
     display: flex;
     overflow-x: auto;
-    overflow-y: visible;
-
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+    padding: 20px;
   }
 
   .Nav_menu::-webkit-scrollbar {
-    display: none;
+    width: 0; /* 스크롤바의 너비 */
+  }
+
+  .Nav_menu::-webkit-scrollbar-thumb {
+    height: 10%; /* 스크롤바의 길이 */
+    background: #42a5f5; /* 스크롤바의 색상 */
+
+    border-radius: 10px;
+  }
+
+  .Nav_menu::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, 0.1); /*스크롤바 뒷 배경 색상*/
   }
 
   .Nav_menu_item {

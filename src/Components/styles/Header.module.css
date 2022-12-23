@@ -48,3 +48,18 @@
 .icon {
   width: 1.9rem;
 }
+.barlogo {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .searchinput {
+    display: none;
+  }
+  .icon {
+    display: none;
+  }
+  .barlogo {
+    display: block;
+  }
+}
